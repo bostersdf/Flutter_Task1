@@ -1,0 +1,45 @@
+{
+    "password": "Password",
+    "email": "Email Address",
+    "sign_in": "Sign In",
+    "forgot_password": "Forgot Password",
+    
+    
+    "wellcome": "Wellcome",
+    "fill_your_details": "Fill in your details to log in",
+    "new_user": "New User?",
+    "create_account": "Create Account",
+    
+    
+    "registration": "Register Account",
+    "your_name": "Your Name",
+    "i_agree": "I agree to the processing of personal data",
+    "sign_up": "Sign up",
+    "fill_your_details2" : "Fill in your details to register",
+    "already_have_account": "Already Have Account?",
+
+
+    "cyemail" : "Confirm your email",
+    "check_mail": "Please check your email for a confirmation email",
+    "сontinue": "Continue",
+    
+
+    "enter_your_email_to_recovery": "Enter your Email account to reset your password",
+    "send": "Send",
+    "profile": "Profile",
+    "orders": "Orders",
+    "get out": "Get out",
+    "primeracc": "Example account name",
+    "basket": "Basket",
+    "settings": "settings",
+    "start": "Shop",
+    "go": " Start",
+    "lets start the journey" : "Lets start the journey",
+    "St" : "Smart, Gorgeous and Fashionable Collection Explore Now",
+    "next": "Next",
+    "You": "You have the power to",
+    "Sr": "There are many beautiful and attractive plants in your room"
+
+
+
+}
