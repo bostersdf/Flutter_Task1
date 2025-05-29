@@ -1,2 +1,2 @@
-# Flutter_Task1
+# Matule
 Competition task on Flutter. 
