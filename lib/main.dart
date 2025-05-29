@@ -1,20 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_task1/core/router/router.dart';
+import 'package:matule/core/router/router.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-void main() async 
-{
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await EasyLocalization.ensureInitialized();
-  
+
   runApp(
     EasyLocalization(
-      supportedLocales: [Locale('en'), Locale('ru',)],
-      path: 'assets/localization',
+      supportedLocales: [Locale('en'), Locale('ru')],
+      path:'assets/localization',
       fallbackLocale: Locale('en'),
-      child: App()
-    )
+      child: App(),
+    ),
   );
 }
 
@@ -23,18 +22,20 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final RouterConfigGO _router = new RouterConfigGO();
-    return MaterialApp.router( 
-       localizationsDelegates: context.localizationDelegates,
+    final RouterConfigGO router = new RouterConfigGO();
+    return MaterialApp.router(
+      localizationsDelegates: context.localizationDelegates,
       supportedLocales: context.supportedLocales,
       locale: context.locale,
-      title: 'Flutter_Task1',
+      title: 'Matule',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         textTheme: GoogleFonts.latoTextTheme(),
-        colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 255, 255, 255)),
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: const Color.fromARGB(255, 255, 255, 255),
+        ),
       ),
-      routerConfig: _router.router,
+      routerConfig: router.router,
     );
   }
 }

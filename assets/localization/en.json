@@ -38,8 +38,10 @@
     "St" : "Smart, Gorgeous and Fashionable Collection Explore Now",
     "next": "Next",
     "You": "You have the power to",
-    "Sr": "There are many beautiful and attractive plants in your room"
-
-
-
+    "Sr": "There are many beautiful and attractive plants in your room",
+    "Home" : "Home",
+    "Search" : "Search",
+    "category" : "Category",
+    "all" : "All",
+    "popular" : "Popular"
 }

@@ -1,4 +1,4 @@
-package com.example.flutter_task1
+package com.example.matule
 
 import io.flutter.embedding.android.FlutterActivity
 

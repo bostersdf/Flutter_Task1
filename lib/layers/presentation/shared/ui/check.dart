@@ -5,21 +5,21 @@ import 'package:easy_localization/easy_localization.dart';
 class CheckBox extends StatefulWidget {
   @override
   // ignore: library_private_types_in_public_api
-  _CheckBoxState createState() => _CheckBoxState();
+  CheckBoxState createState() => CheckBoxState();
 }
 
-class _CheckBoxState extends State<CheckBox> {
-  bool _isChecked = false;
+class CheckBoxState extends State<CheckBox> {
+  bool isChecked = false;
 
   @override
   Widget build(BuildContext context) {
     return Row(
       children: [
         Checkbox(
-          value: _isChecked,
+          value: isChecked,
           onChanged: (bool? value) {
             setState(() {
-              _isChecked = value ?? false;
+              isChecked = value ?? false;
             });
           },
           // ignore: deprecated_member_use

@@ -3,9 +3,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-// ForgotPasswordClass
-class FPC extends StatelessWidget {
-  const FPC({super.key});
+class ForgotPasswordClass extends StatelessWidget {
+  const ForgotPasswordClass({super.key});
 
   @override
   Widget build(BuildContext context) {

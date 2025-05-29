@@ -2,19 +2,19 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:flutter_task1/details/ui/check.dart';
-import 'package:flutter_task1/details/ui/password_field.dart';
+import 'package:matule/layers/presentation/shared/ui/check.dart';
+import 'package:matule/layers/presentation/shared/ui/password_field.dart';
 
-// CreateUserClass
+
 // ignore: must_be_immutable
-class CUC extends StatefulWidget {
-CUC({super.key});
+class CreateUserClass extends StatefulWidget {
+CreateUserClass({super.key});
 bool isChecked = false;
   @override
-  State<CUC> createState() => _CreateUserState();
+  State<CreateUserClass> createState() => CreateUserState();
 }
 
-class _CreateUserState extends State<CUC> {
+class CreateUserState extends State<CreateUserClass> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
