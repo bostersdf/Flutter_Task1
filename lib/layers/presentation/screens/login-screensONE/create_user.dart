@@ -7,14 +7,14 @@ import 'package:matule/layers/presentation/shared/ui/password_field.dart';
 
 
 // ignore: must_be_immutable
-class CreateUserClass extends StatefulWidget {
-CreateUserClass({super.key});
+class ONECreateUserClass extends StatefulWidget {
+ONECreateUserClass({super.key});
 bool isChecked = false;
   @override
-  State<CreateUserClass> createState() => CreateUserState();
+  State<ONECreateUserClass> createState() => ONECreateUserState();
 }
 
-class CreateUserState extends State<CreateUserClass> {
+class ONECreateUserState extends State<ONECreateUserClass> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

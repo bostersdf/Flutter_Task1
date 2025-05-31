@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class MailRegistrationClass extends StatelessWidget {
-  const MailRegistrationClass ({super.key});
+class ONEMailRegistrationClass extends StatelessWidget {
+  const ONEMailRegistrationClass ({super.key});
 
   @override
   Widget build(BuildContext context) {

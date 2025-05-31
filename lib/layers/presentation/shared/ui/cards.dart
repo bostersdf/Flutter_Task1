@@ -30,7 +30,7 @@ class CardsClass extends StatelessWidget {
           ),
         ),
         Positioned(
-          top: 107,
+          top: 95,
           left: 10,
           child: Text(
             'BEST SELLER',
@@ -38,11 +38,12 @@ class CardsClass extends StatelessWidget {
               fontSize: 10,
               color: Color.fromRGBO(72, 178, 231, 1),
               fontWeight: FontWeight.w500,
+              decoration: TextDecoration.none
             ),
           ),
         ),
         Positioned(
-          top: 125,
+          top: 115,
           left: 10,
           child: Text(
             'Nike Air Max',
@@ -50,11 +51,12 @@ class CardsClass extends StatelessWidget {
               fontSize: 15,
               color: Color.fromRGBO(35, 37, 39, 0.527),
               fontWeight: FontWeight.w700,
+              decoration: TextDecoration.none
             ),
           ),
         ),
         Positioned(
-          top: 150,
+          top: 145,
           left: 10,
           child: Text(
             '₽752.00',
@@ -62,6 +64,7 @@ class CardsClass extends StatelessWidget {
               fontSize: 15,
               color: Color.fromRGBO(43, 43, 43, 1),
               fontWeight: FontWeight.w700,
+              decoration: TextDecoration.none
             ),
           ),
         ),
@@ -87,7 +90,7 @@ class CardsClass extends StatelessWidget {
           ),
         ),
         Positioned(
-          top: 140,
+          top: 130,
           left: 120,
           child: Container(
             height: 35,

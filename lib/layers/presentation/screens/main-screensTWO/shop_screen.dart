@@ -2,18 +2,19 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_zoom_drawer/flutter_zoom_drawer.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:matule/layers/presentation/screens/search_screen.dart';
+import 'package:matule/layers/presentation/screens/main-screensTWO/search_screen.dart';
 import 'package:matule/layers/presentation/shared/ui/cards.dart';
 
-class ShopScreenClass extends StatefulWidget {
-  const ShopScreenClass({super.key});
+class TWOShopScreenClass extends StatefulWidget {
+  const TWOShopScreenClass({super.key});
 
   @override
-  State<ShopScreenClass> createState() => ShopScreenClassState();
+  State<TWOShopScreenClass> createState() => TWOShopScreenClassState();
 }
 
-class ShopScreenClassState extends State<ShopScreenClass> {
+class TWOShopScreenClassState extends State<TWOShopScreenClass> {
   final TextEditingController searchController = TextEditingController();
 
   @override
@@ -69,7 +70,7 @@ class ShopScreenClassState extends State<ShopScreenClass> {
                   ),
                   child: GestureDetector(
                     onTap: () => Navigator.push
-                    (context,MaterialPageRoute(builder: (context) => SearchScreenClass(),),
+                    (context,MaterialPageRoute(builder: (context) => TWOSearchScreenClass(),),
                         ),
                     child: Container(
                       height: 50,
@@ -126,7 +127,6 @@ class ShopScreenClassState extends State<ShopScreenClass> {
               scrollDirection: Axis.horizontal,
               padding: EdgeInsets.symmetric(horizontal: 0),
               children: [
-                
                 Container(
                   width: 140,
                   margin: EdgeInsets.only(right: 12),
@@ -198,6 +198,7 @@ class ShopScreenClassState extends State<ShopScreenClass> {
                 ),
               ),
               GestureDetector(
+                onTap: () => context.go('/popular'),
                 child: Text(
                   context.tr('all'),
                   style: GoogleFonts.roboto(

@@ -17,8 +17,7 @@ dependencies:
   easy_localization: ^3.0.7+1
   google_fonts: ^6.2.1
   flutter_zoom_drawer: ^3.2.0
-  get: ^4.7.2
-  supabase_flutter: ^2.9.0
+  package_info_plus: ^8.3.0
 
 dev_dependencies:
   flutter_test:

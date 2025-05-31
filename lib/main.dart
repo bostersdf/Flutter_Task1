@@ -29,10 +29,9 @@ class App extends StatelessWidget {
       locale: context.locale,
       title: 'Matule',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        textTheme: GoogleFonts.latoTextTheme(),
+      theme: ThemeData(textTheme: GoogleFonts.latoTextTheme(),
         colorScheme: ColorScheme.fromSeed(
-          seedColor: const Color.fromARGB(255, 255, 255, 255),
+        seedColor: const Color.fromARGB(255, 255, 255, 255),
         ),
       ),
       routerConfig: router.router,

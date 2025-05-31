@@ -3,11 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:easy_localization/easy_localization.dart';
+import 'package:matule/layers/presentation/screens/settings-screensTHREE/signin_settings/signin_settings_screen.dart';
 import 'package:matule/layers/presentation/shared/ui/password_field.dart';
 import 'package:matule/layers/presentation/shared/ui/email_field.dart';
 
-class SigninClass extends StatelessWidget {
-  const SigninClass ({super.key});
+class ONESigninClass extends StatelessWidget {
+  const ONESigninClass ({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -25,15 +26,11 @@ class SigninClass extends StatelessWidget {
                     borderRadius: BorderRadius.circular(100),
                   ),
                   child: IconButton(
-                    onPressed: () {
-                      if (context.locale.languageCode == 'en') {
-                        context.setLocale(Locale('ru'));
-                      } else {
-                        context.setLocale(Locale('en'));
-                      }
-                    },
-                    icon: Icon(CupertinoIcons.book),
-                  ),
+                  onPressed: () => Navigator.push(
+                    context,MaterialPageRoute(builder: (context) => THREESigninSettingsClass()),
+                    ),
+                  icon: Icon(CupertinoIcons.gear),
+                ),
                 ),
               ],
             ),

@@ -1,44 +1,28 @@
-import 'dart:math';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-class ShoesScreen3 extends StatelessWidget {
+class ZEROShoesScreen1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
+      body: Padding(
+        padding: EdgeInsets.only(top: 0 , bottom: 30,),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Transform(
-              alignment: Alignment.center,
-              transform: Matrix4.identity()..scale(-1.0, 1.0),
-              child: Transform.rotate(
-                angle: pi / 6,
-                child: Image.asset('assets/Shoes3.png'),
-              ),
-            ),
-            SizedBox(height: 20),
             Text(
-              context.tr('You'),
+              context.tr('wellcome'),
               style: TextStyle(
                 fontSize: 25,
                 fontWeight: FontWeight.bold,
                 color: const Color.fromARGB(255, 255, 255, 255),
               ),
             ),
-            SizedBox(height: 10),
-            Text(
-              context.tr('Sr'),
-              style: TextStyle(
-                fontSize: 15,
-                fontWeight: FontWeight.bold,
-                color: const Color.fromARGB(255, 255, 255, 255),
-              ),
-            ),
-            SizedBox(height: 40),
+            SizedBox(height: 100),
+            Image.asset('assets/Shoes1.png'),
+            SizedBox(height: 120),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16.0),
               child: SizedBox(
@@ -46,9 +30,9 @@ class ShoesScreen3 extends StatelessWidget {
                 child: CupertinoButton(
                   borderRadius: BorderRadius.circular(100),
                   color: Color.fromRGBO(245, 243, 243, 1),
-                  onPressed: () => context.go('/one'),
+                  onPressed: () => context.go('/shoes2'),
                   child: Text(
-                    context.tr('next'),
+                    context.tr('go'),
                     style: TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.bold,

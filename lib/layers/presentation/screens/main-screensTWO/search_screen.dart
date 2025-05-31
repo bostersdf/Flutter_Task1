@@ -2,16 +2,16 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:matule/layers/presentation/screens/shop_screen.dart';
+import 'package:matule/layers/presentation/screens/main-screensTWO/shop_screen.dart';
 
-class SearchScreenClass extends StatefulWidget {
-  const SearchScreenClass({super.key});
+class TWOSearchScreenClass extends StatefulWidget {
+  const TWOSearchScreenClass({super.key});
 
   @override
-  State<SearchScreenClass> createState() => SearchScreenClassState();
+  State<TWOSearchScreenClass> createState() => TWOSearchScreenClassState();
 }
 
-class SearchScreenClassState extends State<SearchScreenClass> {
+class TWOSearchScreenClassState extends State<TWOSearchScreenClass> {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -30,9 +30,8 @@ class SearchScreenClassState extends State<SearchScreenClass> {
                 alignment: Alignment.center,
                 child: IconButton(
                   onPressed:
-                      () => Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => ShopScreenClass()),
+                      () => Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => TWOShopScreenClass()),
                       ),
                   icon: Icon(CupertinoIcons.back),
                 ),

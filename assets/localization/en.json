@@ -31,7 +31,7 @@
     "get out": "Get out",
     "primeracc": "Example account name",
     "basket": "Basket",
-    "settings": "settings",
+    "settings": "Settings",
     "start": "Shop",
     "go": " Start",
     "lets start the journey" : "Lets start the journey",
@@ -43,5 +43,10 @@
     "Search" : "Search",
     "category" : "Category",
     "all" : "All",
-    "popular" : "Popular"
+    "popular" : "Popular",
+    "notifications" : "Notifications",
+    "favorite" : "Favorite",
+    "language" : "Language",
+    "version" : "Version",
+    "infovers" : "Version information"
 }

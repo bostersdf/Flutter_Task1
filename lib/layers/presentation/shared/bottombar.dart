@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_zoom_drawer/flutter_zoom_drawer.dart';
 import 'package:go_router/go_router.dart';
-import 'package:matule/layers/presentation/screens/shop_screen.dart';
+import 'package:matule/layers/presentation/screens/main-screensTWO/home_menu_screen.dart';
 
 // ignore: must_be_immutable
 class BottombarClass extends StatefulWidget {
@@ -25,7 +25,7 @@ class BottombarClassState extends State<BottombarClass> {
       showShadow: false,
       menuBackgroundColor: Color.fromRGBO(72, 178, 231, 1),
       angle: -3.0,
-      menuScreen: const ShopScreenClass(),
+      menuScreen: const TWOHomeMenuClass(),
       mainScreen: Scaffold(
         body: Stack(
           children: [
@@ -62,7 +62,7 @@ class BottombarClassState extends State<BottombarClass> {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           IconButton(
-                            onPressed: () => context.go('/start'),// В процессе
+                            onPressed: () => navigationOnIndex(0),
                             iconSize: 24.0,
                             color:
                                 widget.navigationShell.currentIndex == 0
@@ -71,7 +71,7 @@ class BottombarClassState extends State<BottombarClass> {
                             icon: const Icon(CupertinoIcons.home),
                           ),
                           IconButton(
-                            onPressed: () => context,// В процессе 
+                            onPressed: () => navigationOnIndex(1), 
                             iconSize: 24.0,
                             color:
                                 widget.navigationShell.currentIndex == 1
@@ -81,7 +81,7 @@ class BottombarClassState extends State<BottombarClass> {
                           ),
                           const SizedBox(width: 72.0, height: 24.0),
                           IconButton(
-                            onPressed: () => context,// В процессе 
+                            onPressed: () => navigationOnIndex(2), 
                             iconSize: 24.0,
                             color:
                                 widget.navigationShell.currentIndex == 2
@@ -90,7 +90,7 @@ class BottombarClassState extends State<BottombarClass> {
                             icon: const Icon(Icons.notifications_outlined),
                           ),
                           IconButton(
-                            onPressed: () => context, // В процессе 
+                            onPressed: () => navigationOnIndex(3), 
                             iconSize: 24.0,
                             color:
                                 widget.navigationShell.currentIndex == 3

@@ -3,10 +3,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_zoom_drawer/flutter_zoom_drawer.dart';
 import 'package:go_router/go_router.dart';
-import 'package:supabase_flutter/supabase_flutter.dart';
 
-class HomeMenuClass extends StatelessWidget {
-  const HomeMenuClass({super.key, required StatefulNavigationShell navigationShell});
+class TWOHomeMenuClass extends StatelessWidget {
+  const TWOHomeMenuClass({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -17,6 +16,8 @@ class HomeMenuClass extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          
+          SizedBox(height: 200),
           SizedBox(
             height: 24.0,
             width: 170.0,
@@ -25,7 +26,7 @@ class HomeMenuClass extends StatelessWidget {
               color: Colors.transparent,
               child: Row(
                 children: [
-                  Icon(CupertinoIcons.house, color: Color.fromRGBO(255, 255, 255, 1)),
+                  Icon(CupertinoIcons.profile_circled, color: Color.fromRGBO(255, 255, 255, 1)),
                   SizedBox(width: 27.0),
                   Text(
                     context.tr('Home'),
@@ -35,7 +36,7 @@ class HomeMenuClass extends StatelessWidget {
               ),
               onPressed: () {
                 ZoomDrawer.of(context)?.close();
-                context.go('/home');
+                context.go('/start');
               },
             ),
           ),
@@ -75,18 +76,19 @@ class HomeMenuClass extends StatelessWidget {
                   Icon(CupertinoIcons.bag, color: Color.fromRGBO(255, 255, 255, 1)),
                   SizedBox(width: 27.0),
                   Text(
-                    context.tr('cart'),
+                    context.tr('basket'),
                     style: TextStyle(color: Color.fromRGBO(255, 255, 255, 1)),
                   ),
                 ],
               ),
               onPressed: () {
                 ZoomDrawer.of(context)?.close();
-                context.go('/profile');
+                context.go('/basket');
               },
             ),
           ),
           const SizedBox(height: 30),
+
           SizedBox(
             height: 24.0,
             width: 170.0,
@@ -110,7 +112,6 @@ class HomeMenuClass extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 30),
-
           SizedBox(
             height: 24.0,
             width: 170.0,
@@ -132,7 +133,7 @@ class HomeMenuClass extends StatelessWidget {
               ),
               onPressed: () {
                 ZoomDrawer.of(context)?.close();
-                context.go('/cart');
+                context.go('/orders');
               },
             ),
           ),
@@ -161,7 +162,6 @@ class HomeMenuClass extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 30),
-
           SizedBox(
             height: 24.0,
             width: 170.0,
@@ -184,11 +184,9 @@ class HomeMenuClass extends StatelessWidget {
               },
             ),
           ),
-
           const SizedBox(height: 38),
           const Divider(color: Color.fromRGBO(247, 247, 249, 0.23)),
           const SizedBox(height: 30),
-
           SizedBox(
             height: 24.0,
             width: 170.0,
@@ -200,14 +198,13 @@ class HomeMenuClass extends StatelessWidget {
                   Icon(Icons.logout, color: Color.fromRGBO(255, 255, 255, 1)),
                   SizedBox(width: 27.0),
                   Text(
-                    context.tr('sign_out'),
+                    context.tr('get out'),
                     style: TextStyle(color: Color.fromRGBO(255, 255, 255, 1)),
                   ),
                 ],
               ),
               onPressed: () {
-                Supabase.instance.client.auth.signOut();
-                context.go('/signin');
+                context.go('/one');
               },
             ),
           ),
