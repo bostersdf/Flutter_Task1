@@ -76,6 +76,12 @@ class THREELanguageClassState extends State<THREELanguageClass> {
                             decoration: TextDecoration.none
                           ),
                         ),
+                        SizedBox(width: 250,),
+                        Image.asset(
+                        'assets/RUS.png',
+                        width: 40,
+                        height: 40,
+                        ),
                       ],
                     ),
                   ),
@@ -110,6 +116,12 @@ class THREELanguageClassState extends State<THREELanguageClass> {
                             color: Color.fromRGBO(43, 43, 43, 1),
                             decoration: TextDecoration.none
                           ),
+                        ),
+                        SizedBox(width: 260,),
+                        Image.asset(
+                        'assets/ENG.png',
+                        width: 40,
+                        height: 40,
                         ),
                       ],
                     ),

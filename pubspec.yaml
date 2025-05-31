@@ -37,6 +37,8 @@ flutter:
       -  assets/Shoes3.png
       -  assets/shoes_card.png
       -  assets/bottombar.png
+      -  assets/RUS.png
+      -  assets/ENG.png
       
   # example:
   # fonts:
