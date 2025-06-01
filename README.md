@@ -1,2 +1,2 @@
 # Matule
-Competition task on Flutter. 
+Recommended resolution: 375x812
