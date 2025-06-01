@@ -22,7 +22,7 @@ class TWONotificationsClassState extends State<TWONotificationsClass> {
               childAspectRatio: 2,
               crossAxisSpacing: 15,
               padding: EdgeInsets.all(8),
-              children: List.generate(2, (index) => Notifications()),
+              children: List.generate(4, (index) => NotificationsClass()),
             ),
           ),
         ],
@@ -30,9 +30,8 @@ class TWONotificationsClassState extends State<TWONotificationsClass> {
     );
   }
 }
-//Уведомление
-class Notifications extends StatelessWidget {
-  const Notifications({super.key});
+class NotificationsClass extends StatelessWidget {
+  const NotificationsClass({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -56,7 +55,7 @@ class Notifications extends StatelessWidget {
             height: 100,
             width: 100,
             child: Text(
-              'Проверьте почту на наличие письма подтверждения.',
+              'Проверьте почту.',
               style: GoogleFonts.roboto(
                 fontSize: 20,
                 color: Color.fromRGBO(43, 43, 43, 1),
