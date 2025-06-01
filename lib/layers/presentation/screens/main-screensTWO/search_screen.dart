@@ -16,7 +16,7 @@ class TWOSearchScreenClassState extends State<TWOSearchScreenClass> {
   Widget build(BuildContext context) {
     return Container(
       color: Color.fromRGBO(247, 247, 249, 1),
-      padding: EdgeInsets.symmetric(horizontal: 10, vertical: 40),
+      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 40),
       child: Column(
         children: [
           Row(

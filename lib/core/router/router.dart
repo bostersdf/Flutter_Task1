@@ -1,6 +1,9 @@
 import 'package:flutter_zoom_drawer/flutter_zoom_drawer.dart';
+import 'package:matule/layers/presentation/screens/main-screensTWO/basket_screen.dart';
 import 'package:matule/layers/presentation/screens/main-screensTWO/favorite_screen.dart';
 import 'package:matule/layers/presentation/screens/main-screensTWO/notifications_screen.dart';
+import 'package:matule/layers/presentation/screens/main-screensTWO/profile_screen.dart';
+import 'package:matule/layers/presentation/screens/main-screensTWO/orders_screen.dart';
 import 'package:matule/layers/presentation/screens/settings-screensTHREE/signin_settings/signin_settings_screen.dart';
 import 'package:matule/layers/presentation/screens/settings-screensTHREE/settings_screen.dart';
 import 'package:matule/layers/presentation/shared/bottombar.dart';
@@ -53,14 +56,14 @@ class RouterConfigGO {
                 builder: (context, state) => TWONotificationsClass()),
             ],
           ),
-          // StatefulShellBranch(
-          //   routes: [
-          //     GoRoute(
-          //       path: '/profile',
-          //       builder: (context, state) => TWOProfileScreenClass(),
-          //     ),
-          //   ],
-          // ),
+          StatefulShellBranch(
+            routes: [
+              GoRoute(
+                path: '/profile',
+                builder: (context, state) => TWOProfileScreenClass(),
+              ),
+            ],
+          ),
         ],
       ),
       GoRoute(
@@ -96,6 +99,14 @@ class RouterConfigGO {
       GoRoute(
         path: '/search',
         builder: (context, state) => TWOSearchScreenClass(),
+      ),
+      GoRoute(
+        path: '/basket',
+        builder: (context, state) => TWOBasketClass(),
+      ),
+      GoRoute(
+        path: '/orders',
+        builder: (context, state) => TWOOrderClass(),
       ),
     ],
   );

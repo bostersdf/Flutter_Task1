@@ -36,8 +36,6 @@ class BottombarClassState extends State<BottombarClass> {
               right: 0,
               child: Container(
                 height: 150.0,
-                width: double.maxFinite,
-                color: Color.fromRGBO(247, 247, 249, 1),
                 child: Stack(
                   children: [
                     Positioned(
@@ -114,7 +112,7 @@ class BottombarClassState extends State<BottombarClass> {
                           ),
                           elevation: 12.0,
                           child:  Icon(CupertinoIcons.bag, size: 22.0, color: Color.fromRGBO(255, 255, 255, 1),),
-                          onPressed: () => context, // В процессе navigationOnIndex
+                          onPressed: () => context.go('/basket'),
                         ),
                       ),
                     ),

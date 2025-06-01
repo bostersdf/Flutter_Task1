@@ -3,6 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_zoom_drawer/flutter_zoom_drawer.dart';
 import 'package:go_router/go_router.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class TWOHomeMenuClass extends StatelessWidget {
   const TWOHomeMenuClass({super.key});
@@ -16,8 +17,39 @@ class TWOHomeMenuClass extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          
-          SizedBox(height: 200),
+          Center(
+            child: Stack(
+              alignment: Alignment.bottomRight,
+              children: [
+                ClipOval(
+                  child: Image.asset(
+                    'assets/profile.png',
+                    width: 100,
+                    height: 100,
+                    fit: BoxFit.cover,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          SizedBox(height:10),
+          Center(
+            child : Column(
+              children:[
+                Text('bosters',
+                  style : GoogleFonts.roboto(
+                    fontSize :20,
+                    color : Color.fromRGBO(43,43,43,1),
+                    fontWeight : FontWeight.w700,
+                    decoration: TextDecoration.none
+                  )
+                ),
+              ]
+            )
+          ),
+          const SizedBox(height: 30),
+          const Divider(color: Color.fromRGBO(247, 247, 249, 0.23)),
+          const SizedBox(height: 20),
           SizedBox(
             height: 24.0,
             width: 170.0,
@@ -64,7 +96,6 @@ class TWOHomeMenuClass extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 30),
-
           SizedBox(
             height: 24.0,
             width: 170.0,
@@ -88,7 +119,6 @@ class TWOHomeMenuClass extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 30),
-
           SizedBox(
             height: 24.0,
             width: 170.0,
@@ -112,33 +142,6 @@ class TWOHomeMenuClass extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 30),
-          SizedBox(
-            height: 24.0,
-            width: 170.0,
-            child: CupertinoButton(
-              padding: const EdgeInsets.all(0.0),
-              color: Colors.transparent,
-              child: Row(
-                children: [
-                  Icon(
-                    Icons.delivery_dining_outlined,
-                    color: Color.fromRGBO(255, 255, 255, 1),
-                  ),
-                  SizedBox(width: 27.0),
-                  Text(
-                    context.tr('orders'),
-                    style: TextStyle(color: Color.fromRGBO(255, 255, 255, 1)),
-                  ),
-                ],
-              ),
-              onPressed: () {
-                ZoomDrawer.of(context)?.close();
-                context.go('/orders');
-              },
-            ),
-          ),
-          const SizedBox(height: 30),
-
           SizedBox(
             height: 24.0,
             width: 170.0,

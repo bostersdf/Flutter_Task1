@@ -30,7 +30,6 @@ class TWONotificationsClassState extends State<TWONotificationsClass> {
     );
   }
 }
-
 //Уведомление
 class Notifications extends StatelessWidget {
   const Notifications({super.key});

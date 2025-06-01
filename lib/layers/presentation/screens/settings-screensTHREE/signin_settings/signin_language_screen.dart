@@ -76,7 +76,7 @@ class THREESigninLanguageClassState extends State<THREESigninLanguageClass> {
                             decoration: TextDecoration.none
                           ),
                         ),
-                        SizedBox(width: 250,),
+                        SizedBox(width: 125,),
                         Image.asset(
                         'assets/RUS.png',
                         width: 40,
@@ -117,7 +117,7 @@ class THREESigninLanguageClassState extends State<THREESigninLanguageClass> {
                             decoration: TextDecoration.none
                           ),
                         ),
-                        SizedBox(width: 260,),
+                        SizedBox(width: 135,),
                         Image.asset(
                         'assets/ENG.png',
                         width: 40,

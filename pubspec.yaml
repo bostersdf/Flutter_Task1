@@ -39,6 +39,9 @@ flutter:
       -  assets/bottombar.png
       -  assets/RUS.png
       -  assets/ENG.png
+      -  assets/F6.png
+      -  assets/Slon.png
+      -  assets/profile.png
       
   # example:
   # fonts:

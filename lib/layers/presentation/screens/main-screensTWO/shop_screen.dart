@@ -5,6 +5,7 @@ import 'package:flutter_zoom_drawer/flutter_zoom_drawer.dart';
 import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:matule/layers/presentation/screens/main-screensTWO/search_screen.dart';
+import 'package:matule/layers/presentation/shared/ui/cards_f6.dart';
 import 'package:matule/layers/presentation/shared/ui/cards.dart';
 
 class TWOShopScreenClass extends StatefulWidget {
@@ -47,15 +48,15 @@ class TWOShopScreenClassState extends State<TWOShopScreenClass> {
                 ),
               ),
               Container(
-                decoration: BoxDecoration(
-                  color: Color.fromRGBO(255, 255, 255, 1),
-                  borderRadius: BorderRadius.circular(100),
+                  decoration: BoxDecoration(
+                    color: Color.fromRGBO(245, 243, 243, 1),
+                    borderRadius: BorderRadius.circular(100),
+                  ),
+                  child: IconButton(
+                  onPressed: () => context.go('/settings'),
+                  icon: Icon(CupertinoIcons.gear),
                 ),
-                child: IconButton(
-                  onPressed: () {},
-                  icon: Icon(CupertinoIcons.bag),
                 ),
-              ),
             ],
           ),
           SizedBox(height: 12),
@@ -216,10 +217,15 @@ class TWOShopScreenClassState extends State<TWOShopScreenClass> {
               children: [
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [CardsClass(), SizedBox(width: 10), CardsClass()],
+                  children: [CardsClass(), SizedBox(width: 10), CardsF6Class()],
                 ),
                 SizedBox(height: 20),
               ],
+            ),
+          ),
+          Expanded(
+            child: Column(
+              children: [Image.asset('assets/Slon.png', fit: BoxFit.cover)],
             ),
           ),
         ],

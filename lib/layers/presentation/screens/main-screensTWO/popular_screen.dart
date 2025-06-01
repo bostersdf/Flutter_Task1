@@ -17,7 +17,7 @@ class TWOPopularClassState extends State<TWOPopularClass> {
   Widget build(BuildContext context) {
     return Container(
       color: Color.fromRGBO(247, 247, 249, 1),
-      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 40),
+      padding: EdgeInsets.only(top: 40, left: 20, right: 20,),
       child: Column(
         children: [
           Row(
