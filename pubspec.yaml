@@ -39,8 +39,6 @@ flutter:
       -  assets/bottombar.png
       -  assets/RUS.png
       -  assets/ENG.png
-      -  assets/F6.png
-      -  assets/Slon.png
       -  assets/profile.png
       
   # example:
@@ -55,6 +53,4 @@ flutter:
   #       - asset: fonts/TrajanPro.ttf
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
-  #
-  # For details regarding fonts from package dependencies,
-  # see https://flutter.dev/to/font-from-package
+  
