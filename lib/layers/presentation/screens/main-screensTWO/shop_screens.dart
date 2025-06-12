@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_zoom_drawer/flutter_zoom_drawer.dart';
 import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:matule/layers/presentation/screens/main-screensTWO/search_screen.dart';
-import 'package:matule/layers/presentation/shared/ui/cards.dart';
+import 'package:Matule/layers/presentation/screens/main-screensTWO/search_screen.dart';
+import 'package:Matule/layers/presentation/shared/ui/cards.dart';
 
 class TWOShopScreenClass extends StatefulWidget {
   const TWOShopScreenClass({super.key});

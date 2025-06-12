@@ -1,24 +1,24 @@
 import 'package:flutter_zoom_drawer/flutter_zoom_drawer.dart';
-import 'package:matule/layers/presentation/screens/main-screensTWO/basket_screen.dart';
-import 'package:matule/layers/presentation/screens/main-screensTWO/favorite_screen.dart';
-import 'package:matule/layers/presentation/screens/main-screensTWO/notifications_menu_screen.dart';
-import 'package:matule/layers/presentation/screens/main-screensTWO/profile_screen.dart';
-import 'package:matule/layers/presentation/screens/main-screensTWO/orders_screen.dart';
-import 'package:matule/layers/presentation/screens/settings-screensTHREE/signin_settings/signin_settings_screen.dart';
-import 'package:matule/layers/presentation/screens/settings-screensTHREE/settings_screen.dart';
-import 'package:matule/layers/presentation/shared/bottombar.dart';
-import 'package:matule/layers/presentation/screens/login-screensONE/create_user.dart';
-import 'package:matule/layers/presentation/screens/login-screensONE/forgot_password.dart';
-import 'package:matule/layers/presentation/screens/login-screensONE/mail_registration_screen.dart';
-import 'package:matule/layers/presentation/screens/main-screensTWO/popular_screen.dart';
-import 'package:matule/layers/presentation/screens/main-screensTWO/shop_screens.dart';
-import 'package:matule/layers/presentation/screens/main-screensTWO/search_screen.dart';
+import 'package:Matule/layers/presentation/screens/main-screensTWO/basket_screen.dart';
+import 'package:Matule/layers/presentation/screens/main-screensTWO/favorite_screen.dart';
+import 'package:Matule/layers/presentation/screens/main-screensTWO/notifications_menu_screen.dart';
+import 'package:Matule/layers/presentation/screens/main-screensTWO/profile_screen.dart';
+import 'package:Matule/layers/presentation/screens/main-screensTWO/orders_screen.dart';
+import 'package:Matule/layers/presentation/screens/settings-screensTHREE/signin_settings/signin_settings_screen.dart';
+import 'package:Matule/layers/presentation/screens/settings-screensTHREE/settings_screen.dart';
+import 'package:Matule/layers/presentation/shared/bottombar.dart';
+import 'package:Matule/layers/presentation/screens/login-screensONE/create_user.dart';
+import 'package:Matule/layers/presentation/screens/login-screensONE/forgot_password.dart';
+import 'package:Matule/layers/presentation/screens/login-screensONE/mail_registration_screen.dart';
+import 'package:Matule/layers/presentation/screens/main-screensTWO/popular_screen.dart';
+import 'package:Matule/layers/presentation/screens/main-screensTWO/shop_screens.dart';
+import 'package:Matule/layers/presentation/screens/main-screensTWO/search_screen.dart';
 import 'package:go_router/go_router.dart';
-import 'package:matule/layers/presentation/screens/start-screensZERO/shoes1.dart';
-import 'package:matule/layers/presentation/screens/start-screensZERO/shoes2.dart';
-import 'package:matule/layers/presentation/screens/start-screensZERO/shoes3.dart';
-import 'package:matule/layers/presentation/screens/login-screensONE/signin_screen.dart';
-import 'package:matule/layers/presentation/screens/main-screensTWO/home_menu_screen.dart';
+import 'package:Matule/layers/presentation/screens/start-screensZERO/shoes1.dart';
+import 'package:Matule/layers/presentation/screens/start-screensZERO/shoes2.dart';
+import 'package:Matule/layers/presentation/screens/start-screensZERO/shoes3.dart';
+import 'package:Matule/layers/presentation/screens/login-screensONE/signin_screen.dart';
+import 'package:Matule/layers/presentation/screens/main-screensTWO/home_menu_screen.dart';
 
 class RouterConfigGO {
   final GoRouter router = GoRouter(initialLocation: '/',

@@ -3,8 +3,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:matule/layers/presentation/screens/settings-screensTHREE/language_screen.dart';
-import 'package:matule/layers/presentation/screens/settings-screensTHREE/version.dart';
+import 'package:Matule/layers/presentation/screens/settings-screensTHREE/language_screen.dart';
+import 'package:Matule/layers/presentation/screens/settings-screensTHREE/version.dart';
 
 class THREESettingsClass extends StatefulWidget {
   const THREESettingsClass({super.key});

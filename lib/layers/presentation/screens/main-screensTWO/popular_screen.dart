@@ -3,7 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:matule/layers/presentation/shared/ui/cards.dart';
+import 'package:Matule/layers/presentation/shared/ui/cards.dart';
 
 class TWOPopularClass extends StatefulWidget {
   const TWOPopularClass({super.key});

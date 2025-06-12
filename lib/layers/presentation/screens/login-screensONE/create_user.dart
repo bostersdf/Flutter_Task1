@@ -2,8 +2,8 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:matule/layers/presentation/shared/ui/check.dart';
-import 'package:matule/layers/presentation/shared/ui/password_field.dart';
+import 'package:Matule/layers/presentation/shared/ui/check.dart';
+import 'package:Matule/layers/presentation/shared/ui/password_field.dart';
 
 
 // ignore: must_be_immutable

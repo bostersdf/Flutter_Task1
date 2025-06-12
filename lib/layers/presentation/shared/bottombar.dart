@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_zoom_drawer/flutter_zoom_drawer.dart';
 import 'package:go_router/go_router.dart';
-import 'package:matule/layers/presentation/screens/main-screensTWO/home_menu_screen.dart';
+import 'package:Matule/layers/presentation/screens/main-screensTWO/home_menu_screen.dart';
 
 // ignore: must_be_immutable
 class BottombarClass extends StatefulWidget {

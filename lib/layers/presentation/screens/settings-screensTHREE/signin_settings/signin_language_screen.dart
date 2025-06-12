@@ -2,7 +2,7 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:matule/layers/presentation/screens/settings-screensTHREE/signin_settings/signin_settings_screen.dart';
+import 'package:Matule/layers/presentation/screens/settings-screensTHREE/signin_settings/signin_settings_screen.dart';
 
 class THREESigninLanguageClass extends StatefulWidget {
   const THREESigninLanguageClass({super.key});
